@@ -5,6 +5,7 @@ FROM ubuntu:focal
 ENV LANG C.UTF-8
 
 # Setup base
+RUN apt update
 RUN apt install -y jq sshpass rsync
 
 # Hass.io CLI
